@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>4each.掲示板</title>
+        <link rel="stylesheet" type="text/css" href="style.css" >
+    </head>
+    <body>
+        <?php
+          mb_internal_encoding("utf8"); $pdo = new PDO("mysql:dbname=lesson01;host=localhost;","root",""); $stmt = $pdo->query("select * from 4each_keijiban"); while ($row = $stmt->fetch()) { echo $row['handlename']; echo $row['title']; echo $row['comments']; }
+        ?>
+        <header>
+            <img src="4eachblog_logo.jpg"><br>
+            <div class="bar">
+                <ul　class="menu">
+                <li>トップ</li>
+                <li>プロフィール</li>
+                <li>4eachについて</li>
+                <li>登録フォーム</li>
+                <li>問い合わせ</li>
+                <li>その他</li>
+            </ul>
+            </div>
+        </header>
+        <main>
+            <div class="main-container">
+                <div class="left">
+                    <h2>プログラミングに役立つ掲示板</h2>
+                    <br>
+                    <div class="form">
+                        <p>入力フォーム</p><br>
+                        <form method="post" action="insert.php">
+                            <div>ハンドルネーム</div>
+                            <input type="text" name="handlename"><br>
+                            <div>タイトル</div>
+                            <input type="text" name="title"><br>
+                            <div>コメント</div>
+                            <textarea rows="7" cols="35" name="comment"></textarea><br>
+                            <input type="submit" value="投稿する">
+                            
+                        </form>
+                    </div>
+                    <div><br></div>
+     
+                    <div class='kiji'> 
+                        <h3>タイトル</h3>
+                        <div class=‘contents’> 記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。 記事の中身。記事の中身。記事の中身。記事の中身。<br> 記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。<br> 記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。<br> 
+                            <div class=‘handlename’>posted by 通りすがり</div>
+                        </div> 
+                    </div>
+                    <div><br></div>
+                    <div class='kiji'> 
+                        <h3>タイトル</h3>
+                        <div class=‘contents’> 記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。 記事の中身。記事の中身。記事の中身。記事の中身。<br> 記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。<br> 記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。<br> 
+                            <div class=‘handlename’>posted by 通りすがり</div>
+                        </div> 
+                    </div>
+                    <div><br></div>
+                    
+                    <div class='kiji'> 
+                        <h3>タイトル</h3>
+                        <div class=‘contents’> 記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。 記事の中身。記事の中身。記事の中身。記事の中身。<br> 記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。<br> 記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。<br> 
+                            <div class=‘handlename’>posted by 通りすがり</div>
+                        </div> 
+                    </div>
+                    <div><br></div>
+                    
+
+                   
+                   
+                </div>
+                <div class="right">
+                    <div class="list">
+                        <h4>人気の記事</h4>
+                        <ul>
+                            <li>PHP　おすすめ本</li>
+                            <li>PHP MyAdminの使い方</li>
+                            <li>今人気のエディタ　Top5</li>
+                            <li>HTMLの基礎</li>
+                        </ul>
+                        <h4>オススメリンク</h4>
+                        <ul>
+                            <li>インターノウス株式会社</li>
+                            <li>XAMPPのダウンロード</li>
+                            <li>Eclipseのダウンロード</li>
+                            <li>Bracketのダウンロード</li>
+                        </ul>
+                        <h4>カテゴリ</h4>
+                        <ul>
+                            <li>HTML</li>
+                            <li>PHP</li>
+                            <li>MYSQL</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </main>
+        <footer>
+            <p>copyright intenous | 4each keijiban is the one which provides A to Z about programming</p>
+            
+        </footer>
+    </body>
+</html>
