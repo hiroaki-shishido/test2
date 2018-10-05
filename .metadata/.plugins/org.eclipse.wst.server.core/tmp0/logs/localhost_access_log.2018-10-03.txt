@@ -26,3 +26,8 @@
 0:0:0:0:0:0:0:1 - - [03/Oct/2018:20:57:03 +0900] "GET /HelloServlet/ HTTP/1.1" 200 375
 0:0:0:0:0:0:0:1 - - [03/Oct/2018:20:57:05 +0900] "GET /HelloServlet/inquiry.jsp HTTP/1.1" 200 750
 0:0:0:0:0:0:0:1 - - [03/Oct/2018:20:57:10 +0900] "POST /HelloServlet/InquiryServlet HTTP/1.1" 200 107
+127.0.0.1 - - [03/Oct/2018:21:39:06 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [03/Oct/2018:21:39:08 +0900] "GET /HelloServlet/ HTTP/1.1" 200 694
+0:0:0:0:0:0:0:1 - - [03/Oct/2018:21:39:21 +0900] "GET /HelloServlet/TestServlet?username=rr&password=rr HTTP/1.1" 500 1909
+0:0:0:0:0:0:0:1 - - [03/Oct/2018:21:41:02 +0900] "POST /HelloServlet/TestServlet HTTP/1.1" 200 57
+0:0:0:0:0:0:0:1 - - [03/Oct/2018:21:41:06 +0900] "GET /HelloServlet/TestServlet?username=rr&password=gggg HTTP/1.1" 500 1909
