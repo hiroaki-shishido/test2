@@ -1,0 +1,15 @@
+package object;
+
+public class Robot {
+	public String name = null;
+	public void talk(){
+		System.out.println("ぼく"+this.name+"!");
+	}
+	public void walk(){
+		System.out.println(this.name+"が歩く");
+	}
+	public void run(){
+		System.out.println(this.name+"が走る");
+	}
+
+}
