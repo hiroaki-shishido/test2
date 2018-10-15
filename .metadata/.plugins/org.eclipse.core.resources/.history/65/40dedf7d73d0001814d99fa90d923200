@@ -1,0 +1,5 @@
+package com.internousdev.wevproj.action;
+
+public class WelcomeAction {
+
+}
