@@ -8,12 +8,12 @@ import java.sql.SQLException;
 import com.internousdev.webpro2.util.DBConnector;
 
 public class HelloStrutsDAO {
-	
+
 	public boolean select(){
 		boolean ret=false;
 		DBConnector db=new DBConnector();
 		Connection con =db.getConnection();
-		String dql="select * from users";
+		String sql="select * from users";
 		try {
 			PreparedStatement ps =con.prepareStatement(sql);
 			ResultSet rs =ps.executeQuery();
