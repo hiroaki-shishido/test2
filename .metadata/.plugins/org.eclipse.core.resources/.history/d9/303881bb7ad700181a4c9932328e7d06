@@ -1,0 +1,5 @@
+package com.internous.dev.webproj4.dto;
+
+public class HelloStrutsDTO {
+
+}
