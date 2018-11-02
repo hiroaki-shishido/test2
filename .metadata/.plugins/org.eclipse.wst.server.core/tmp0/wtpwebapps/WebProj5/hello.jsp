@@ -5,6 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
 <title>HelloStruts</title>
 </head>
 <body>
@@ -25,6 +26,7 @@
         <td><s:property value="password"/></td>
         <td><s:property value="result"/></td>
       </tr>
+      </s:iterator>
   </tbody>
 </table>
 

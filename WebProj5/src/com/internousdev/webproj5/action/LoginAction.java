@@ -15,7 +15,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
 	private List<LoginDTO> loginDTOList=new ArrayList<LoginDTO>();
 	private Map<String,Object> session;
 
-	public String excute(){
+	public String execute(){
 		String ret=ERROR;
 		System.out.println(username);
 		System.out.println(password);
@@ -25,6 +25,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
 		if(this.username.equals(loginDTOList.get(0).getUsername())
 				&& this.password.equals(loginDTOList.get(0).getPassword())){
 			session.put("loginDTOList", loginDTOList);
+			ret=SUCCESS;
 		}else{
 			session.put("loginDTOList", loginDTOList);
 			ret=ERROR;
