@@ -1,0 +1,12 @@
+127.0.0.1 - - [05/Nov/2018:19:08:35 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [05/Nov/2018:19:08:39 +0900] "GET /WebProj5/ HTTP/1.1" 200 2440
+0:0:0:0:0:0:0:1 - - [05/Nov/2018:19:08:42 +0900] "POST /WebProj5/WelcomeAction.action;jsessionid=636B71AFEE214A027B9DA95832F501C7 HTTP/1.1" 200 978
+0:0:0:0:0:0:0:1 - - [05/Nov/2018:19:08:51 +0900] "POST /WebProj5/LoginAction.action HTTP/1.1" 200 9406
+0:0:0:0:0:0:0:1 - - [05/Nov/2018:19:13:32 +0900] "GET /WebProj5/ HTTP/1.1" 200 2220
+0:0:0:0:0:0:0:1 - - [05/Nov/2018:19:14:01 +0900] "POST /WebProj5/WelcomeAction.action HTTP/1.1" 200 978
+0:0:0:0:0:0:0:1 - - [05/Nov/2018:19:14:11 +0900] "POST /WebProj5/LoginAction.action HTTP/1.1" 200 451
+0:0:0:0:0:0:0:1 - - [05/Nov/2018:19:14:11 +0900] "GET /WebProj5/css/style.css HTTP/1.1" 200 1374
+0:0:0:0:0:0:0:1 - - [05/Nov/2018:19:18:51 +0900] "POST /WebProj5/LoginAction.action HTTP/1.1" 200 451
+0:0:0:0:0:0:0:1 - - [05/Nov/2018:19:18:51 +0900] "GET /WebProj5/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Nov/2018:20:40:00 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [05/Nov/2018:20:40:02 +0900] "GET /WebProj5/ HTTP/1.1" 200 2220
