@@ -1,0 +1,14 @@
+package com.internousdev.template.dao;
+import java.sql.Connection;
+
+import com.internousdev.template.dto.BuyItemDTO;
+import com.internousdev.template.util.DBConnector;
+
+public class BuyItemDAO {
+	public BuyItemDTO getBuyItemInfo(){
+		DBConnector dbConnector=new DBConnector();
+		Connection connection=dbConnection.getConnection();
+		
+	}
+
+}
