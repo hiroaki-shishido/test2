@@ -1,7 +1,6 @@
 package com.internousdev.template.util;
 import java.text.SimpleDateFormat;
-
-import org.apache.struts2.components.Date;
+import java.util.Date;
 
 public class DateUtil {
 	public String getDate() {
